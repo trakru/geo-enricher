@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build: ./jupyter
+    command: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+    volumes:
+      - ./jupyter:/src
+    ports:
+      - 8888:8888
+    environment: 
+      - ENVIRONMENT=dev
+      - TESTING=0
