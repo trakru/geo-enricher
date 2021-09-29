@@ -1,5 +1,7 @@
-#virtual environment
+#virtual environment & code editors
 venv/
+.idea/
+.vscode/
 
 MANIFEST
 build
